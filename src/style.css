@@ -12,7 +12,7 @@ header {
 
 header .cabecalho {
     width: 100%;
-   }
+}
 
 
 
@@ -21,7 +21,7 @@ header .cabecalho ul {
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    
+
 }
 
 header .cabecalho ul li {
@@ -30,7 +30,7 @@ header .cabecalho ul li {
     font-family: "Raleway", sans-serif;
     letter-spacing: 2px;
     transition: .3s;
-    
+
 }
 
 header .cabecalho ul li:hover {
@@ -85,13 +85,16 @@ header .cabecalho ul li a {
     font-size: 7rem;
     color: rgb(245, 245, 245);
     font-family: "Playfair", serif;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+}
 
+.container-hero img {
+    width: 100px;
 }
 
 
 .container-hero .botao-hero {
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: "Raleway", sans-serif;
     color: rgb(255, 255, 255);
     padding: 15px 50px;
@@ -204,12 +207,15 @@ section .sobre-container a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 60px 300px;
+    padding: 60px 20px; 
+    max-width: 900px; 
+    margin: 0 auto; 
 }
 
 .aulas .container-aulas {
     display: flex;
     flex-direction: column;
+    width: 100%; 
 }
 
 .aulas h2 {
@@ -242,15 +248,25 @@ section .sobre-container a:hover {
     padding: 20px;
     margin-bottom: 20px;
     display: flex;
-    gap: 20px;
+    gap: 30px;
     align-items: center;
-    text-align: center;
-  
+    justify-content: space-around;
+ 
+
 }
 
+.aulas .container-aulas li p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 0;
+}
+
+.aulas .container-aulas li h3 {
+    text-align: left;
+}
 
 .aulas .container-aulas .box-aulas img {
-    width: 50px;
+    max-width: 50px;
     height: auto;
 
 }
@@ -644,35 +660,35 @@ section .sobre-container a:hover {
     position: absolute;
     height: 120px;
     width: 250px;
-    transform: translate(30%, -50%);
+    transform: translate(30%, -30%);
     padding: 15px;
     border-radius: 10px;
     font-family: "Raleway", sans-serif;
     color: rgb(255, 255, 255);
     transition: .5s;
-    background: rgba(230, 228, 228, 0.212);
+    background: rgba(85, 83, 83, 0.555);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(1.5px);
-    border: 0.8px solid rgba(255, 255, 255, 0.74);
+    border: 0.8px solid rgba(255, 255, 255, 0.815);
 }
 
 .informacoes-foto h3 {
     font-size: 1.7rem;
     color: #ffffff;
     text-shadow: 1px 1px 1px black;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .informacoes-foto p {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     text-shadow: 1px 1px 1px black;
 }
 
 
 .container-foto img {
-    max-width: 300px;
-    max-height: 300px;
+    width: 300px;
+    height: 250px;
     border-radius: 10px;
     transition: 0.3s ease;
 }
@@ -680,7 +696,7 @@ section .sobre-container a:hover {
 
 .container-foto img:hover {
     transform: scale(1.05);
-} 
+}
 
 
 .botao-aulas {
@@ -742,7 +758,7 @@ section .sobre-container a:hover {
     align-items: center;
     justify-content: space-evenly;
     gap: 40px;
-  
+
 }
 
 .videos-principal iframe,
@@ -765,6 +781,7 @@ section .sobre-container a:hover {
     padding: 10px;
     margin-bottom: 40px;
 }
+
 .videos-secundario a:hover {
     background: rgb(245, 216, 173);
 }
@@ -786,10 +803,10 @@ section .sobre-container a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height:50vh;
-   }
+    height: 50vh;
+}
 
-   .avaliacoes-txt {
+.avaliacoes-txt {
     background-color: #ffffff;
     width: 50%;
     display: flex;
@@ -798,26 +815,26 @@ section .sobre-container a:hover {
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 0 7px rgba(44, 44, 44, 0.651);
-   }
+}
 
-   .avaliacoes-txt h3 {
+.avaliacoes-txt h3 {
     font-family: "Raleway", sans-serif;
     font-size: 1.8rem;
     text-align: center;
     margin-bottom: 10px;
 
-   }
+}
 
-   .avaliacoes-txt p {
+.avaliacoes-txt p {
     font-family: "Raleway", sans-serif;
     font-size: 1.6rem;
     line-height: 2.4rem;
     text-align: center;
     margin-bottom: 10px;
 
-   }
+}
 
-   .botao-esquerdo,
+.botao-esquerdo,
 .botao-direito {
     color: rgb(0, 0, 0);
     position: absolute;
@@ -861,9 +878,9 @@ section .sobre-container a:hover {
 }
 
 .galeria {
- column-count: 3;
- column-gap: 20px;
- padding: 40px;
+    column-count: 3;
+    column-gap: 20px;
+    padding: 40px;
 }
 
 .galeria img {
@@ -887,6 +904,8 @@ section .sobre-container a:hover {
     grid-column: span 2;
     grid-row: span 2;
 }
+
+
 
 /* lightbox */
 
@@ -920,5 +939,6 @@ section .sobre-container a:hover {
 
 
 .fechar:hover {
-    color: #ffffff; ;
+    color: #ffffff;
+    ;
 }
