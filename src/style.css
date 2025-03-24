@@ -207,15 +207,15 @@ section .sobre-container a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 60px 20px; 
-    max-width: 900px; 
-    margin: 0 auto; 
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .aulas .container-aulas {
     display: flex;
     flex-direction: column;
-    width: 100%; 
+    width: 100%;
 }
 
 .aulas h2 {
@@ -250,8 +250,8 @@ section .sobre-container a:hover {
     display: flex;
     gap: 30px;
     align-items: center;
-    justify-content: space-around;
- 
+    text-align: center;
+
 
 }
 
