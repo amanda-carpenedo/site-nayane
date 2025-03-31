@@ -15,7 +15,6 @@ header .cabecalho {
 }
 
 
-
 header .cabecalho ul {
     display: flex;
     align-items: center;
@@ -42,6 +41,103 @@ header .cabecalho ul li a {
     color: #171718;
 }
 
+/* MENU MOBILE */
+
+header .menu-mobile {
+    background-color: rgba(0, 0, 0, 0.452);
+    backdrop-filter: blur(15px);
+    position: absolute;
+    width: 100%;
+    height: 0vh;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: .5s;
+    z-index: 3;
+}
+
+header .menu-mobile nav {
+    width: 100%;
+
+}
+
+header .menu-mobile nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+header .menu-mobile nav a {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 20px 0;
+    display: block;
+    width: 100vw;
+    text-align: center;
+    transition: .3s;
+
+}
+
+header .menu-mobile nav a:hover {
+    font-size: 25px;
+}
+
+header .menu-mobile.abrir {
+    width: 100%;
+    height: 100vh;
+
+}
+
+body.no-overflow {
+    overflow: hidden;
+}
+
+
+/* BOTAO MOBILE */
+header .botao {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: none;
+   
+}
+
+header .botao .linha {
+    width: 30px;
+    height: 2px;
+    display: block;
+    margin: 6px auto;
+    position: relative;
+    transform-origin: center;
+    transition: 0.2s;
+
+}
+
+header .botao.ativar .linha:nth-child(1) {
+    transform: translateY(8px) rotate(-45deg);
+    background-color: #ffffff;
+}
+
+header .botao.ativar .linha:nth-child(3) {
+    transform: translateY(-8px) rotate(45deg);
+    background-color: #ffffff;
+}
+
+header .botao.ativar .linha:nth-child(2) {
+    width: 0;
+}
+
+
+
 /* HERO */
 
 .hero {
@@ -55,6 +151,7 @@ header .cabecalho ul li a {
     position: absolute;
     width: 100%;
     height: 100%;
+
 }
 
 .slides img {
@@ -78,7 +175,6 @@ header .cabecalho ul li a {
     justify-content: center;
     width: 100%;
     height: 100%;
-
 }
 
 .container-hero h1 {
@@ -139,6 +235,10 @@ section .seta-hero {
     }
 }
 
+.imagem-estatica {
+    display: none;
+}
+
 /* SOBRE */
 
 section .sobre-container {
@@ -147,7 +247,9 @@ section .sobre-container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 60px 300px;
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
 
 }
 
@@ -251,8 +353,6 @@ section .sobre-container a:hover {
     gap: 30px;
     align-items: center;
     text-align: center;
-
-
 }
 
 .aulas .container-aulas li p {
@@ -644,22 +744,26 @@ section .sobre-container a:hover {
 
 .aulas-foto {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     background-color: #313131;
     height: 70vh;
-}
+    padding: 0 50px;
+    gap: 10px;
 
+}
 
 .aulas-foto .container-foto {
     position: relative;
+    margin: 10px;
 
 }
 
 .informacoes-foto {
     position: absolute;
-    height: 120px;
-    width: 250px;
+    max-height: 120px;
+    max-width: 250px;
     transform: translate(30%, -30%);
     padding: 15px;
     border-radius: 10px;
@@ -793,8 +897,11 @@ section .sobre-container a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 50px 300px;
+    align-items: center;
+    padding: 50px 10%;
     background-color: rgb(218, 212, 203);
+    position: relative;
+    height: 60vh;
 
 }
 
@@ -804,11 +911,14 @@ section .sobre-container a:hover {
     align-items: center;
     justify-content: center;
     height: 50vh;
+    width: 100%;
+    max-width: 800px;
 }
 
 .avaliacoes-txt {
     background-color: #ffffff;
-    width: 50%;
+    width: 80%;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     padding: 30px;
@@ -839,23 +949,24 @@ section .sobre-container a:hover {
     color: rgb(0, 0, 0);
     position: absolute;
     background-color: transparent;
-    border: 0px;
+    border: none;
     font-size: 4rem;
     padding: 10px;
-    top: 35%;
+    top: 50%;
+    transform: translateY(-50%);
     cursor: pointer;
     transition: .5s;
 }
 
 
 .botao-esquerdo {
-    left: 400px;
+    left: 30%;
     text-shadow: 2px 2px 20px white;
 }
 
 
 .botao-direito {
-    right: 400px;
+    right: 30%;
     text-shadow: -2px 2px 20px white;
 }
 
@@ -919,6 +1030,9 @@ section .sobre-container a:hover {
     display: none;
     justify-content: center;
     align-items: center;
+    pointer-events: auto;
+    z-index: 9999;
+    
 }
 
 .lightbox img {
@@ -940,5 +1054,8 @@ section .sobre-container a:hover {
 
 .fechar:hover {
     color: #ffffff;
-    ;
+}
+
+.desativado {
+    pointer-events: none;
 }

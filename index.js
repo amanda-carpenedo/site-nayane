@@ -88,8 +88,14 @@ function abrirImagem(imagem) {
     const srcImagem = imagem.src
     document.getElementById('imagem-grande').src = srcImagem
     document.getElementById('lightbox').style.display = 'flex'
+   
+    document.body.classList.add('desativado')
 }
 
 function fecharImagem() {
     document.getElementById('lightbox').style.display = 'none'
+
+    document.body.classList.remove('desativado')
 }
+
+

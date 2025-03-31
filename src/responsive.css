@@ -1,0 +1,1154 @@
+@media screen and (max-width: 1456px) {
+
+    .aulas-foto {
+        height: 110vh;
+        justify-content: space-around;
+    }
+
+    .aulas-foto .container-foto {
+        margin: 30px;
+    }
+
+}
+
+@media screen and (max-width: 1301px) {
+
+    /* seção sobre */
+    .sobre-principal {
+        padding: 60px 200px;
+    }
+
+    /* seção aulas */
+    .aula-principal {
+        padding: 50px 200px;
+    }
+
+    /* seção videos */
+    .videos-secundario {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .videos-secundario a {
+        font-size: 1.8rem;
+        width: 40%;
+    }
+
+    /* seção avaliações */
+
+    .botao-esquerdo {
+        left: 20%;
+    }
+
+    .botao-direito {
+        right: 20%;
+    }
+
+}
+
+
+@media screen and (max-width: 1171px) {
+
+    /* CONTATOS */
+
+    .section-contatos {
+        height: 85vh;
+        background-attachment: local;
+    }
+
+    .contatos {
+        padding: 40px 200px 60px;
+    }
+
+    .contatos h2 {
+        font-size: 5rem;
+    }
+
+    .contatos .container-contatos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contatos .container-contatos .box-contatos {
+        height: 190px;
+
+    }
+
+
+}
+
+
+@media screen and (max-width: 1090px) {
+    .sobre-principal {
+        padding: 60px 100px;
+    }
+}
+
+
+@media screen and (max-width: 965px) {
+
+    /* sobre */
+    section .sobre-container {
+        max-width: 800px;
+    }
+
+    /* aulas */
+    .aulas {
+        max-width: 800px;
+    }
+
+    /* seção aulas */
+    .aula-principal {
+        padding: 50px 100px;
+
+    }
+
+    /* seção vídeos */
+    .videos-principal {
+        padding: 50px 40px;
+        margin: 0 0 10px;
+
+    }
+
+    .videos-principal iframe {
+        width: 100%;
+        max-width: 860px;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    .videos-principal h2 {
+        font-size: 5rem;
+    }
+}
+
+
+
+@media screen and (max-width: 915px) {
+
+    /* contatos */
+    .contatos {
+        padding: 40px 80px 60px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 885px) {
+    /* hero */
+
+    .slides img {
+        width: 100%;
+        height: 95%;
+        object-position: 20%;
+        position: absolute;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+
+    .hero {
+        position: relative;
+        height: 90vh;
+        width: 100%;
+        overflow: hidden;
+    }
+
+
+    /* sobre */
+    section .sobre-container h2 {
+        font-size: 5rem;
+    }
+
+    section .sobre-container p {
+        font-size: 1.6rem;
+    }
+
+    section .sobre-container a {
+        font-size: 1.8rem;
+    }
+
+
+    section .sobre-container a {
+        margin-bottom: 20px;
+    }
+
+
+    /* aulas */
+
+    .aulas h2 {
+        font-size: 5rem;
+    }
+
+    .aulas .container-aulas p {
+        font-size: 1.6rem;
+    }
+
+    .aulas .container-aulas li {
+        font-size: 1.4rem;
+    }
+
+    .aulas .container-aulas li p {
+        font-size: 1.4rem;
+    }
+
+    .aulas .container-aulas li h3 {
+        font-size: 1.4rem;
+    }
+
+    .aulas .container-aulas .botao-aula {
+        font-size: 1.8rem;
+    }
+
+    /* contato */
+
+    .section-contatos {
+        height: 80vh;
+
+    }
+
+    .contatos {
+        padding: 40px 100px 60px;
+    }
+
+    .contatos .container-contatos .box-contatos {
+        width: 200px;
+        height: 180px;
+        padding: 15px 10px;
+    }
+
+    .contatos .container-contatos .box-contatos p {
+        font-size: 1.4rem;
+    }
+
+    .contatos .container-contatos .box-contatos img {
+        max-width: 60px;
+        height: 40px;
+        margin: 20px 0 0;
+
+    }
+
+
+    /* seção sobre */
+    .sobre-principal {
+        padding: 60px 90px;
+    }
+
+    /* seção  aulas */
+    .aula-principal {
+        padding: 50px 80px;
+    }
+
+    .aula-principal h2 {
+        font-size: 5rem;
+    }
+
+    .aula-principal p {
+        font-size: 1.7rem;
+        line-height: 2.6rem;
+    }
+
+    .aulas-foto {
+        padding-left: 10px;
+    }
+
+    .aulas-foto {
+        height: 90vh;
+    }
+
+    .container-foto img {
+        width: 250px;
+        height: 210px;
+    }
+
+    .botao-aulas a {
+        font-size: 1.7rem;
+        margin-top: 50px;
+    }
+
+    /* seção avaliações */
+
+    .botao-esquerdo {
+        left: 10%;
+    }
+
+    .botao-direito {
+        right: 10%;
+    }
+
+    .avaliacoes-txt {
+        max-width: 550px;
+    }
+
+    .avaliacoes-txt p {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+
+    }
+}
+
+
+@media screen and (max-width: 845px) {
+    /* seção aulas */
+
+    .informacoes-foto {
+        position: absolute;
+        max-height: 100px;
+        max-width: 210px;
+        transform: translate(45%, -30%);
+    }
+
+    .informacoes-foto h3 {
+        font-size: 1.5rem;
+    }
+
+    .informacoes-foto p {
+        font-size: 1.3rem;
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 835px) {
+
+    /* contato */
+    .section-contatos {
+        height: 60%;
+    }
+
+    /* seção vídeos */
+    .videos-secundario a {
+        font-size: 1.6rem;
+        width: 60%;
+    }
+
+    /* seção aulas */
+    .aulas-foto {
+        height: 140%;
+        padding: 30px 50px;
+    }
+
+    .aulas-foto .container-foto {
+        margin: 50px 40px;
+    }
+}
+
+
+@media screen and (max-width: 821px) {
+
+    /* sobre */
+    section .sobre-container {
+        padding: 10px 0px;
+        max-width: 600px;
+    }
+
+    .aulas {
+        padding: 60px 0px;
+        max-width: 600px;
+    }
+
+    /* seção sobre */
+    .botao-timeline {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+        transform: translateY(-20%);
+    }
+
+    /* seção avaliações */
+    .avaliacoes {
+        height: 40vh;
+
+    }
+
+}
+
+
+@media screen and (max-width: 771px) {
+    header .menu-mobile.abrir {
+        visibility: visible;
+        height: 120vh;
+    }
+
+    /* cabeçalho responsivo */
+    header .cabecalho {
+        display: none;
+    }
+
+    header .botao {
+        display: block;
+        z-index: 100;
+    }
+
+    header {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        padding-right: 20px;
+    }
+
+    header .menu-mobile.abrir {
+        visibility: visible;
+        height: 100vh;
+        width: 100vw;
+    }
+
+
+    /* imagem hero */
+    .slides {
+        display: none;
+    }
+
+    .imagem-estatica {
+        display: block;
+        position: absolute;
+        object-fit: contain;
+        height: 90vh;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .container-hero {
+        position: relative;
+        z-index: 2;
+    }
+
+    .container-hero h1 {
+        font-size: 6rem;
+    }
+
+    .container-hero img {
+        width: 60px;
+    }
+
+    .container-hero .botao-hero {
+        font-size: 1.6rem;
+        padding: 15px 40px;
+    }
+
+
+    /* sobre */
+    section .sobre-container {
+        padding: 60px 0px 30px;
+        max-width: 600px;
+    }
+
+    .aulas {
+        padding: 30px 0px 60px;
+        max-width: 600px;
+    }
+
+    /* seção sobre */
+
+    .sobre-principal {
+        padding: 60px 70px;
+    }
+
+    .sobre-principal h2 {
+        font-size: 5rem;
+    }
+
+    .sobre-principal p {
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+
+    }
+
+    .sobre-principal a {
+        font-size: 1.6rem;
+    }
+
+    /* seção vídeos */
+    .videos-secundario iframe {
+        width: 100%;
+        max-width: 460px;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    /* contatos */
+    .contatos h2 {
+        font-size: 5rem;
+
+    }
+}
+
+
+
+@media screen and (max-width: 705px) {
+    .aulas-foto {
+        height: 100%;
+        padding: 20px 40px;
+    }
+
+    /* .aulas-foto .container-foto {
+        margin: 50px 40px;
+    } */
+
+}
+
+
+@media screen and (max-width: 685px) {
+    section .sobre-container {
+        padding: 60px 0px;
+        max-width: 550px;
+    }
+
+    section .sobre-container h2 {
+        font-size: 4.5rem;
+    }
+
+    section .sobre-container p {
+        font-size: 1.4rem;
+    }
+
+    section .sobre-container a {
+        font-size: 1.6rem;
+    }
+
+    /* aulas */
+    .aulas {
+        padding: 20px 0;
+        max-width: 550px;
+
+    }
+
+    .aulas h2 {
+        font-size: 4.5rem;
+    }
+
+    .aulas .container-aulas p {
+        font-size: 1.4rem;
+    }
+
+    .aulas .container-aulas li {
+        font-size: 1.4rem;
+    }
+
+    .aulas .container-aulas li p {
+        font-size: 1.4rem;
+    }
+
+    .aulas .container-aulas .botao-aula {
+        font-size: 1.6rem;
+        margin-bottom: 60px;
+    }
+
+
+
+}
+
+
+
+@media screen and (max-width: 625px) {
+    /* hero */
+
+    .container-hero h1 {
+        font-size: 5rem;
+    }
+
+    .container-hero img {
+        width: 50px;
+    }
+
+    .container-hero .botao-hero {
+        font-size: 1.4rem;
+        padding: 15px 40px;
+    }
+
+
+    /* sobre */
+    section .sobre-container {
+        max-width: 500px;
+    }
+
+    /* aulas */
+    .aulas {
+        max-width: 500px;
+    }
+
+    .aulas .container-aulas {
+        align-items: center;
+    }
+
+    .aulas .container-aulas .box-aulas li {
+        display: flex;
+        flex-direction: column;
+        width: 400px
+    }
+
+    .aulas .container-aulas .box-aulas p {
+        text-align: center;
+    }
+
+    /* seção sobre */
+
+    .sobre-principal {
+        padding: 60px 50px;
+    }
+
+    .sobre-principal h2 {
+        font-size: 4rem;
+    }
+
+    .timeline {
+        padding: 10px;
+
+    }
+
+    .timeline-item.aparecer {
+        padding: 10px;
+    }
+
+    .timeline-conteudo h3 {
+        font-size: 1.4rem;
+    }
+
+    .timeline-conteudo p {
+        font-size: 1.3rem;
+    }
+
+    .timeline-conteudo .timeline-titulo {
+        font-size: 1.4rem;
+    }
+
+    .botao-timeline a {
+        font-size: 1.6rem;
+
+    }
+
+    /* seção  aulas */
+    .aula-principal {
+        padding: 50px 60px;
+    }
+
+    .aula-principal h2 {
+        font-size: 4rem;
+    }
+
+    .aula-principal p {
+        font-size: 1.5rem;
+        line-height: 2.3rem;
+    }
+
+}
+
+
+@media screen and (max-width: 615px) {
+
+    /* contatos */
+
+    .contatos .container-contatos .box-contatos {
+        width: 150px;
+        height: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contatos .container-contatos .box-contatos p {
+        font-size: 1.2rem;
+    }
+
+    .contatos .container-contatos .box-contatos img {
+        max-width: 50px;
+        height: 30px;
+        margin: 0;
+    }
+
+    .contatos .container-contatos .box-contatos .conteudo-contatos {
+        gap: 15px;
+    }
+
+    /* contatos */
+    .contatos h2 {
+        font-size: 4rem;
+
+    }
+
+    /* seção vídeos */
+    .videos-principal h2 {
+        font-size: 4.5rem;
+    }
+
+}
+
+
+@media screen and (max-width: 565px) {
+    section .sobre-container {
+        max-width: 450px;
+    }
+
+    section .sobre-container h2 {
+        font-size: 4rem;
+    }
+
+    section .sobre-container p {
+        font-size: 1.4rem;
+        line-height: 2.3rem;
+    }
+
+    section .sobre-container a {
+        font-size: 1.4rem;
+    }
+
+    .sobre::after {
+        margin: 10px auto;
+    }
+
+    /* aulas */
+    .aulas {
+        max-width: 450px;
+    }
+
+    .aulas h2 {
+        font-size: 4rem;
+    }
+
+    /* seção  aulas */
+    .aula-principal {
+        padding: 50px 40px;
+    }
+
+    .botao-aulas a {
+        font-size: 1.6rem;
+        width: 35%;
+    }
+
+    /* seção vídeos */
+    .videos-secundario a {
+        font-size: 1.6rem;
+        width: 70%;
+    }
+
+    /* galeria */
+    .container-galeria h2 {
+        font-size: 5rem;
+
+    }
+
+    /* lightbox */
+
+    .fechar {
+        top: 10px;
+        right: 35px;
+        font-size: 30px;
+
+    }
+
+    .lightbox img {
+        max-width: 80%;
+        max-height: 80%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 515px) {
+    /* contatos */
+
+    .contatos .container-contatos .box-contatos {
+        width: 300px;
+        height: 80px;
+    }
+
+    .contatos .container-contatos .box-contatos .conteudo-contatos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+
+    }
+
+    /* seção sobre */
+    .botao-timeline a {
+        font-size: 1.4rem;
+
+    }
+
+    /* seção vídeos */
+    .videos-principal h2 {
+        font-size: 3.8rem;
+    }
+
+}
+
+
+
+@media screen and (max-width: 481px) {
+
+    /* HERO */
+    .imagem-estatica {
+        left: -180px;
+    }
+
+    .container-hero h1 {
+        font-size: 4rem;
+    }
+
+    .container-hero img {
+        width: 40px;
+    }
+
+    .container-hero .botao-hero {
+        font-size: 1.5rem;
+        padding: 15px 30px;
+    }
+
+    /* SOBRE */
+    section .sobre-container {
+        max-width: 390px;
+    }
+
+    /* AULAS */
+    .aulas {
+        max-width: 390px;
+    }
+
+    /* contatos */
+
+    .contatos h2 {
+        font-size: 4.5rem;
+
+    }
+
+    /* seção sobre */
+    .botao-timeline a {
+        font-size: 1.4rem;
+        width: 40%;
+    }
+
+    /* seção aula */
+    .container-foto:first-of-type .informacoes-foto {
+        transform: translate(80%, -30%);
+    }
+
+    /* seção vídeos */
+    .videos-secundario a {
+        font-size: 1.6rem;
+        width: 90%;
+    }
+
+    /* contatos */
+    .contatos h2 {
+        font-size: 3.5rem;
+
+    }
+
+    .avaliacoes-txt {
+        max-width: 420px;
+        height: auto;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .avaliacoes-txt h3 {
+        font-size: 1.6rem;
+
+    }
+
+    .avaliacoes-txt p {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+
+    }
+
+    .botao-esquerdo {
+        left: 5%;
+    }
+
+    .botao-direito {
+        right: 5%;
+    }
+
+    /* galeria */
+    .galeria {
+        column-gap: 10px;
+        padding: 20px;
+    }
+
+    .galeria img {
+        margin-bottom: 10px;
+    }
+    
+
+
+}
+
+
+
+@media screen and (max-width: 415px) {
+
+    /* SOBRE */
+    section .sobre-container {
+        max-width: 370px;
+    }
+
+    /* AULAS */
+    .aulas {
+        max-width: 370px;
+    }
+
+    .aulas .container-aulas .box-aulas li {
+        width: 370px
+    }
+
+    /* seção avaliações */
+
+    .avaliacoes {
+        height: 50vh;
+
+    }
+
+    /* galeria */
+    .container-galeria h2 {
+        font-size: 4rem;
+
+    }
+}
+
+
+
+@media screen and (max-width: 394px) {
+    section .sobre-container {
+        max-width: 350px;
+    }
+
+    section .sobre-container h2 {
+        font-size: 3.4rem;
+    }
+
+    /* aulas */
+    .aulas {
+        max-width: 350px;
+    }
+
+    .aulas h2 {
+        font-size: 3.4rem;
+    }
+
+    .aulas .container-aulas .box-aulas li {
+        display: flex;
+        flex-direction: column;
+        width: 350px
+    }
+
+    /* seção sobre */
+    .sobre-principal {
+        padding: 60px 30px;
+    }
+
+    .timeline-conteudo h3 {
+        font-size: 1.3rem;
+    }
+
+    .timeline-conteudo p {
+        font-size: 1.2rem;
+    }
+
+    .timeline-conteudo .timeline-titulo {
+        font-size: 1.3rem;
+    }
+
+    /* seção aulas */
+
+    .aulas-foto {
+        padding: 50px 10px;
+    }
+
+    .aulas-foto .container-foto {
+        margin: 50px 0;
+    }
+
+    .botao-aulas a {
+        font-size: 1.6rem;
+        width: 45%;
+    }
+
+    .informacoes-foto {
+        transform: translate(35%, -30%);
+    }
+
+    .container-foto:first-of-type .informacoes-foto {
+        transform: translate(65%, -30%);
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 361px) {
+    section .sobre-container {
+        max-width: 320px;
+    }
+
+    /* aulas */
+    .aulas {
+        max-width: 320px;
+    }
+
+    .aulas .container-aulas .box-aulas li {
+        width: 320px
+    }
+
+    .aulas .container-aulas li {
+        gap: 20px;
+    }
+
+    /* seção avaliações */
+
+    .botao-esquerdo {
+        left: 2%;
+    }
+
+    .botao-direito {
+        right: 2%;
+    }
+
+    /* seção videos */
+    .videos-secundario {
+        padding: 20px;
+    }
+
+    .videos-principal {
+        padding: 50px 20px;
+    }
+
+}
+
+@media screen and (max-width: 321px) {
+
+    /* hero */
+    .imagem-estatica {
+        left: -20%;
+    }
+
+    .container-hero h1 {
+        font-size: 3rem;
+    }
+
+    .container-hero img {
+        width: 35px;
+        margin-bottom: 10px;
+    }
+
+    .container-hero .botao-hero {
+        font-size: 1.4rem;
+        padding: 10px 20px;
+    }
+
+    /* sobre */
+    section .sobre-container {
+        max-width: 290px;
+    }
+
+    /* aulas */
+    .aulas {
+        max-width: 290px;
+    }
+
+    .aulas .container-aulas .box-aulas li {
+        width: 290px
+    }
+
+    .aulas .container-aulas li {
+        gap: 10px;
+    }
+
+    /* contatos */
+
+
+    .contatos .container-contatos .box-contatos {
+        height: 70px;
+    }
+
+    .contatos .container-contatos {
+        gap: 20px;
+    }
+
+    /* footer */
+    .rodape p {
+        font-size: 1.2rem;
+    }
+
+    .rodape .container-rodape {
+        gap: 30px;
+    }
+
+    .rodape .container-rodape i {
+        font-size: 3rem;
+    }
+
+    /* seção sobre */
+    .sobre-principal {
+        padding: 60px 20px;
+    }
+
+    .timeline-conteudo h3 {
+        font-size: 1.2rem;
+    }
+
+    .timeline-conteudo p {
+        font-size: 1.1rem;
+    }
+
+    .timeline-conteudo .timeline-titulo {
+        font-size: 1.2rem;
+    }
+
+    .botao-timeline a {
+        font-size: 1.2rem;
+        width: 40%;
+    }
+
+    /* seção aulas */
+    .aula-principal {
+        padding: 50px 30px;
+    }
+
+    .container-foto img {
+        width: 230px;
+        height: 200px;
+    }
+
+
+    .botao-aulas a {
+        font-size: 1.6rem;
+        width: 50%;
+    }
+
+    .informacoes-foto {
+        transform: translate(20%, -30%);
+    }
+
+    .container-foto:first-of-type .informacoes-foto {
+        transform: translate(50%, -30%);
+    }
+
+    /* seção avaliações */
+
+    .avaliacoes {
+        height: 70vh;
+
+    }
+
+    /* seção vídeos */
+
+    .videos-secundario a {
+        font-size: 1.4rem;
+    }
+
+
+}

@@ -24,6 +24,7 @@
 </head>
 
 <body>
+   
     <header>
         <nav class="cabecalho">
             <ul>
@@ -32,9 +33,28 @@
                 <li><a href="aulas.html">AULAS</a></li>
                 <li><a href="videos.html">VÍDEOS</a></li>
                 <li><a href="avaliacoes.html">AVALIAÇÕES</a></li>
-                <li><a href="#">GALERIA</a></li>
+                <li><a href="galeria.html">GALERIA</a></li>
             </ul>
         </nav>
+
+        <button id="btn-menu-mobile" class="botao" onclick="animar()">
+            <span class="linha"></span>
+            <span class="linha"></span>
+            <span class="linha"></span>
+        </button>
+
+        <section class="menu-mobile" id="menu-mobile">
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="sobre.html">SOBRE</a></li>
+                    <li><a href="aulas.html">AULAS</a></li>
+                    <li><a href="videos.html">VÍDEOS</a></li>
+                    <li><a href="avaliacoes.html">AVALIAÇÕES</a></li>
+                    <li><a href="galeria.html">GALERIA</a></li>
+                </ul>
+            </nav>
+        </section>
     </header>
 
     <section class="container-galeria">
@@ -52,10 +72,11 @@
             <img src="./galeria/turma2.png" alt="Foto 9" onclick="abrirImagem(this)">
             <img src="./galeria/Jogo.png" alt="Foto 11" onclick="abrirImagem(this)">
             <img src="./galeria/aluna.jpg" alt="Foto 12" onclick="abrirImagem(this)">
-        </div>
-        <div id="lightbox" class="lightbox"  onclick="fecharImagem()" >
-            <span id="fechar" class="fechar" onclick="fecharImagem()">&#10005;</span>
-            <img src="" alt="imagem ampliada" id="imagem-grande">
+            
+            <div id="lightbox" class="lightbox"  onclick="fecharImagem()" >
+                <span id="fechar" class="fechar" onclick="fecharImagem()">&#10005;</span>
+                <img src="" alt="imagem ampliada" id="imagem-grande">
+            </div>
         </div>
     </section>
 
@@ -72,8 +93,8 @@
     </footer>
 
 
-
     <script src="index.js"></script>
+    <script src="mobile.js"></script>
 </body>
 
 </html
