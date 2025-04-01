@@ -82,87 +82,60 @@ function mostrarSlides(n) {
 
 }
 
+
+
 // GALERIA
 
-// function abrirImagem(imagem) {
-//     const srcImagem = imagem.src
-//     document.getElementById('imagem-grande').src = srcImagem
-//     document.getElementById('lightbox').style.display = 'flex'
-   
-//     document.body.classList.add('desativado')
-// }
+let imagens = Array.from(document.querySelectorAll('.galeria img'));
+let indiceAtual = 0;
+let startX = 0;
 
-// function fecharImagem() {
-//     document.getElementById('lightbox').style.display = 'none'
-
-//     document.body.classList.remove('desativado')
-// }
-
-
-
-let touchStartX = 0;
-let touchEndX = 0;
-
+// Abrir imagem no lightbox e definir índice atual
 function abrirImagem(imagem) {
     const srcImagem = imagem.src;
     document.getElementById('imagem-grande').src = srcImagem;
     document.getElementById('lightbox').style.display = 'flex';
     document.body.classList.add('desativado');
 
-    // Adiciona ouvintes de eventos de toque
-    const imagemGrande = document.getElementById('imagem-grande');
-    imagemGrande.addEventListener('touchstart', handleTouchStart, false);
-    imagemGrande.addEventListener('touchmove', handleTouchMove, false);
-    imagemGrande.addEventListener('touchend', handleTouchEnd, false);
+    // Atualiza o índice da imagem atual
+    indiceAtual = imagens.indexOf(imagem);
 }
 
+// Fechar lightbox
 function fecharImagem() {
     document.getElementById('lightbox').style.display = 'none';
     document.body.classList.remove('desativado');
-
-    // Remove ouvintes de eventos de toque
-    const imagemGrande = document.getElementById('imagem-grande');
-    imagemGrande.removeEventListener('touchstart', handleTouchStart, false);
-    imagemGrande.removeEventListener('touchmove', handleTouchMove, false);
-    imagemGrande.removeEventListener('touchend', handleTouchEnd, false);
 }
 
-function handleTouchStart(event) {
-    touchStartX = event.touches[0].clientX;
-}
+// Mudar imagem no lightbox
+function mudarImagem(direcao) {
+    indiceAtual += direcao;
 
-function handleTouchMove(event) {
-    touchEndX = event.touches[0].clientX;
-}
-
-function handleTouchEnd() {
-    const deltaX = touchEndX - touchStartX;
-    const swipeThreshold = 50; // Ajuste este valor conforme necessário
-
-    if (Math.abs(deltaX) > swipeThreshold) {
-        if (deltaX > 0) {
-            // Swipe para a direita (imagem anterior)
-            navegarImagem(-1);
-        } else {
-            // Swipe para a esquerda (próxima imagem)
-            navegarImagem(1);
-        }
-    }
-}
-
-function navegarImagem(direcao) {
-    const imagemGrande = document.getElementById('imagem-grande');
-    const galeria = document.querySelectorAll('.galeria img'); // Ajuste o seletor conforme necessário
-
-    const imagensSrc = Array.from(galeria).map(img => img.src);
-    const indiceAtual = imagensSrc.indexOf(imagemGrande.src);
-    let novoIndice = indiceAtual + direcao;
-
-    if (novoIndice < 0) {
-        novoIndice = imagensSrc.length - 1; // Volta para a última imagem
-    } else if (novoIndice >= imagensSrc.length) {
-        novoIndice = 0; // Volta para a primeira imagem
+    // Garantir que o índice fique dentro do intervalo válido
+    if (indiceAtual < 0) {
+        indiceAtual = imagens.length - 1; // Volta para a última imagem
+    } else if (indiceAtual >= imagens.length) {
+        indiceAtual = 0; // Volta para a primeira imagem
     }
 
-    imagemGrande.src = imagensSrc[novoIndice];
+    // Atualiza a imagem no lightbox
+    document.getElementById('imagem-grande').src = imagens[indiceAtual].src;
 }
+
+// Detectar swipe para mudar de imagem no mobile
+const imagemGrande = document.getElementById('imagem-grande');
+
+imagemGrande.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+});
+
+imagemGrande.addEventListener('touchend', (e) => {
+    let endX = e.changedTouches[0].clientX;
+    let diferenca = startX - endX;
+
+    if (diferenca > 50) {
+        mudarImagem(1); // Próxima imagem
+    } else if (diferenca < -50) {
+        mudarImagem(-1); // Imagem anterior
+    }
+});

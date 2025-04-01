@@ -1078,6 +1078,11 @@ section .sobre-container a:hover {
     pointer-events: none;
 }
 
+
+body.desativado {
+    overflow: hidden;
+}
+
 .fundo-lightbox {
     position: fixed;
     top: 0;
