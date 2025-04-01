@@ -84,18 +84,85 @@ function mostrarSlides(n) {
 
 // GALERIA
 
-function abrirImagem(imagem) {
-    const srcImagem = imagem.src
-    document.getElementById('imagem-grande').src = srcImagem
-    document.getElementById('lightbox').style.display = 'flex'
+// function abrirImagem(imagem) {
+//     const srcImagem = imagem.src
+//     document.getElementById('imagem-grande').src = srcImagem
+//     document.getElementById('lightbox').style.display = 'flex'
    
-    document.body.classList.add('desativado')
+//     document.body.classList.add('desativado')
+// }
+
+// function fecharImagem() {
+//     document.getElementById('lightbox').style.display = 'none'
+
+//     document.body.classList.remove('desativado')
+// }
+
+
+
+let touchStartX = 0;
+let touchEndX = 0;
+
+function abrirImagem(imagem) {
+    const srcImagem = imagem.src;
+    document.getElementById('imagem-grande').src = srcImagem;
+    document.getElementById('lightbox').style.display = 'flex';
+    document.body.classList.add('desativado');
+
+    // Adiciona ouvintes de eventos de toque
+    const imagemGrande = document.getElementById('imagem-grande');
+    imagemGrande.addEventListener('touchstart', handleTouchStart, false);
+    imagemGrande.addEventListener('touchmove', handleTouchMove, false);
+    imagemGrande.addEventListener('touchend', handleTouchEnd, false);
 }
 
 function fecharImagem() {
-    document.getElementById('lightbox').style.display = 'none'
+    document.getElementById('lightbox').style.display = 'none';
+    document.body.classList.remove('desativado');
 
-    document.body.classList.remove('desativado')
+    // Remove ouvintes de eventos de toque
+    const imagemGrande = document.getElementById('imagem-grande');
+    imagemGrande.removeEventListener('touchstart', handleTouchStart, false);
+    imagemGrande.removeEventListener('touchmove', handleTouchMove, false);
+    imagemGrande.removeEventListener('touchend', handleTouchEnd, false);
 }
 
+function handleTouchStart(event) {
+    touchStartX = event.touches[0].clientX;
+}
 
+function handleTouchMove(event) {
+    touchEndX = event.touches[0].clientX;
+}
+
+function handleTouchEnd() {
+    const deltaX = touchEndX - touchStartX;
+    const swipeThreshold = 50; // Ajuste este valor conforme necessário
+
+    if (Math.abs(deltaX) > swipeThreshold) {
+        if (deltaX > 0) {
+            // Swipe para a direita (imagem anterior)
+            navegarImagem(-1);
+        } else {
+            // Swipe para a esquerda (próxima imagem)
+            navegarImagem(1);
+        }
+    }
+}
+
+function navegarImagem(direcao) {
+    const imagemGrande = document.getElementById('imagem-grande');
+    const galeria = document.querySelectorAll('.galeria img'); // Ajuste o seletor conforme necessário
+
+    const imagensSrc = Array.from(galeria).map(img => img.src);
+    const indiceAtual = imagensSrc.indexOf(imagemGrande.src);
+    let novoIndice = indiceAtual + direcao;
+
+    if (novoIndice < 0) {
+        novoIndice = imagensSrc.length - 1; // Volta para a última imagem
+    } else if (novoIndice >= imagensSrc.length) {
+        novoIndice = 0; // Volta para a primeira imagem
+    }
+
+    imagemGrande.src = imagensSrc[novoIndice];
+}

@@ -108,7 +108,7 @@ header .botao {
     background: transparent;
     cursor: pointer;
     display: none;
-   
+
 }
 
 header .botao .linha {
@@ -944,6 +944,22 @@ section .sobre-container a:hover {
 
 }
 
+.avaliacoes-txt i {
+    color: #171718;
+    max-width: 120px;
+    color: rgb(216, 216, 19);
+    
+}
+
+.avaliacoes-txt .estrelas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+
 .botao-esquerdo,
 .botao-direito {
     color: rgb(0, 0, 0);
@@ -1032,7 +1048,7 @@ section .sobre-container a:hover {
     align-items: center;
     pointer-events: auto;
     z-index: 9999;
-    
+
 }
 
 .lightbox img {
