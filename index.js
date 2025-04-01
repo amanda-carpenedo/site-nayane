@@ -91,11 +91,14 @@ let indiceAtual = 0;
 let startX = 0;
 let moveX = 0;
 
+const lightbox = document.getElementById('lightbox');
+const imagemGrande = document.getElementById('imagem-grande');
+
 // Abrir imagem no lightbox e definir índice atual
 function abrirImagem(imagem) {
     const srcImagem = imagem.src;
-    document.getElementById('imagem-grande').src = srcImagem;
-    document.getElementById('lightbox').style.display = 'flex';
+    imagemGrande.src = srcImagem;
+    lightbox.style.display = 'flex';
     document.body.classList.add('desativado');
 
     // Atualiza o índice da imagem atual
@@ -104,7 +107,7 @@ function abrirImagem(imagem) {
 
 // Fechar lightbox
 function fecharImagem() {
-    document.getElementById('lightbox').style.display = 'none';
+    lightbox.style.display = 'none';
     document.body.classList.remove('desativado');
 }
 
@@ -120,22 +123,19 @@ function mudarImagem(direcao) {
     }
 
     // Atualiza a imagem no lightbox
-    document.getElementById('imagem-grande').src = imagens[indiceAtual].src;
+    imagemGrande.src = imagens[indiceAtual].src;
 }
 
 // Detectar swipe para mudar de imagem no iOS e Android
-const imagemGrande = document.getElementById('imagem-grande');
-
-imagemGrande.addEventListener('touchstart', (e) => {
+lightbox.addEventListener('touchstart', (e) => {
     startX = e.touches[0].clientX;
-}, { passive: false });
+}, { passive: true });
 
-imagemGrande.addEventListener('touchmove', (e) => {
-    e.preventDefault(); // Impede que o navegador capture o gesto como um scroll
+lightbox.addEventListener('touchmove', (e) => {
     moveX = e.touches[0].clientX;
-}, { passive: false });
+}, { passive: true });
 
-imagemGrande.addEventListener('touchend', (e) => {
+lightbox.addEventListener('touchend', () => {
     let diferenca = startX - moveX;
 
     if (diferenca > 50) {
