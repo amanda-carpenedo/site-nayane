@@ -1052,6 +1052,8 @@ section .sobre-container a:hover {
 }
 
 .lightbox img {
+    width: auto;
+    height: auto;
     max-width: 90%;
     max-height: 90%;
     border-radius: 4px;
@@ -1074,4 +1076,14 @@ section .sobre-container a:hover {
 
 .desativado {
     pointer-events: none;
+}
+
+.fundo-lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent; 
+    z-index: -1; 
 }

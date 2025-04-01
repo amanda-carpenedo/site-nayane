@@ -24,7 +24,7 @@
 </head>
 
 <body>
-   
+
     <header>
         <nav class="cabecalho">
             <ul>
@@ -72,10 +72,11 @@
             <img src="./galeria/turma2.png" alt="Foto 9" onclick="abrirImagem(this)">
             <img src="./galeria/Jogo.png" alt="Foto 11" onclick="abrirImagem(this)">
             <img src="./galeria/aluna.jpg" alt="Foto 12" onclick="abrirImagem(this)">
-            
-            <div id="lightbox" class="lightbox"  onclick="fecharImagem()" >
+
+            <div id="lightbox" class="lightbox">
                 <span id="fechar" class="fechar" onclick="fecharImagem()">&#10005;</span>
                 <img src="" alt="imagem ampliada" id="imagem-grande">
+                <div class="fundo-lightbox" onclick="fecharImagem()"></div>
             </div>
         </div>
     </section>
@@ -97,4 +98,4 @@
     <script src="mobile.js"></script>
 </body>
 
-</html
+</html>
