@@ -85,6 +85,7 @@ function mostrarSlides(n) {
 
 
 // GALERIA
+
 let imagens = Array.from(document.querySelectorAll('.galeria img'));
 let indiceAtual = 0;
 let startX = 0;
@@ -127,11 +128,12 @@ const imagemGrande = document.getElementById('imagem-grande');
 
 imagemGrande.addEventListener('touchstart', (e) => {
     startX = e.touches[0].clientX;
-}, { passive: true });
+}, { passive: false });
 
 imagemGrande.addEventListener('touchmove', (e) => {
+    e.preventDefault(); // Impede que o navegador capture o gesto como um scroll
     moveX = e.touches[0].clientX;
-}, { passive: true });
+}, { passive: false });
 
 imagemGrande.addEventListener('touchend', (e) => {
     let diferenca = startX - moveX;
