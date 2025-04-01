@@ -85,10 +85,10 @@ function mostrarSlides(n) {
 
 
 // GALERIA
-
 let imagens = Array.from(document.querySelectorAll('.galeria img'));
 let indiceAtual = 0;
 let startX = 0;
+let moveX = 0;
 
 // Abrir imagem no lightbox e definir índice atual
 function abrirImagem(imagem) {
@@ -122,16 +122,19 @@ function mudarImagem(direcao) {
     document.getElementById('imagem-grande').src = imagens[indiceAtual].src;
 }
 
-// Detectar swipe para mudar de imagem no mobile
+// Detectar swipe para mudar de imagem no iOS e Android
 const imagemGrande = document.getElementById('imagem-grande');
 
 imagemGrande.addEventListener('touchstart', (e) => {
     startX = e.touches[0].clientX;
-});
+}, { passive: true });
+
+imagemGrande.addEventListener('touchmove', (e) => {
+    moveX = e.touches[0].clientX;
+}, { passive: true });
 
 imagemGrande.addEventListener('touchend', (e) => {
-    let endX = e.changedTouches[0].clientX;
-    let diferenca = startX - endX;
+    let diferenca = startX - moveX;
 
     if (diferenca > 50) {
         mudarImagem(1); // Próxima imagem
