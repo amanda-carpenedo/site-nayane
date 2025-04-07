@@ -1088,9 +1088,12 @@ body.desativado {
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-font-size: 5px;
     color: #ffffff;
+    transform: scale(0.50);
 }
+
+
+
 
 /* swiper styles */
 
