@@ -282,7 +282,7 @@
     }
 
     .avaliacoes-txt {
-        max-width: 550px;
+        max-width: 90%;
     }
 
     .avaliacoes-txt p {
@@ -365,7 +365,7 @@
 
     /* seção avaliações */
     .avaliacoes {
-        height: 40vh;
+        height: 50vh;
 
     }
 
@@ -680,6 +680,21 @@
         font-size: 4.5rem;
     }
 
+    /* seção avaliações */
+  
+    .botao-esquerdo {
+        left: 5%;
+    }
+
+    .botao-direito {
+        right: 5%;
+    }
+    
+    .avaliacoes-txt p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
 }
 
 
@@ -742,15 +757,7 @@
         top: 10px;
         right: 35px;
         font-size: 30px;
-
     }
-
-    .lightbox img {
-        max-width: 80%;
-        max-height: 80%;
-    }
-
-
 }
 
 
@@ -864,13 +871,6 @@
 
     }
 
-    .botao-esquerdo {
-        left: 5%;
-    }
-
-    .botao-direito {
-        right: 5%;
-    }
 
     /* galeria */
     .galeria {
@@ -881,7 +881,7 @@
     .galeria img {
         margin-bottom: 10px;
     }
-    
+
 
 
 }

@@ -20,6 +20,9 @@
     <!-- bootstrap icones -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <title>Nayane Nogueira | Professora de piano</title>
 </head>
 
@@ -78,10 +81,16 @@
     <!-- saiu da section -->
     <div id="lightbox" class="lightbox">
         <span id="fechar" class="fechar" onclick="fecharImagem()">&#10005;</span>
-        <img src="" alt="imagem ampliada" id="imagem-grande">
+        <!-- <img src="" alt="imagem ampliada" id="imagem-grande"> -->
+        <div class="swiper">
+            <div class="swiper-wrapper">
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
         <div class="fundo-lightbox" onclick="fecharImagem()"></div>
     </div>
-    
+
     <footer class="rodape">
         <div class="container-rodape">
             <a href="https://wa.me/+555181428183" target="_blank"><i class="bi bi-whatsapp"></i></a>
@@ -94,7 +103,8 @@
         <p>Nayane Nogueira &#169 Todos os direitos reservados</p>
     </footer>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="swipe.js"></script>
     <script src="index.js"></script>
     <script src="mobile.js"></script>
 </body>
