@@ -288,7 +288,6 @@
     .avaliacoes-txt p {
         font-size: 1.4rem;
         line-height: 2.2rem;
-
     }
 }
 
@@ -310,8 +309,6 @@
     .informacoes-foto p {
         font-size: 1.3rem;
     }
-
-
 
 }
 
@@ -490,11 +487,7 @@
         padding: 20px 40px;
     }
 
-    /* .aulas-foto .container-foto {
-        margin: 50px 40px;
-    } */
-
-}
+  }
 
 
 @media screen and (max-width: 685px) {
@@ -542,8 +535,6 @@
         font-size: 1.6rem;
         margin-bottom: 60px;
     }
-
-
 
 }
 
@@ -681,7 +672,7 @@
     }
 
     /* seção avaliações */
-  
+
     .botao-esquerdo {
         left: 5%;
     }
@@ -689,7 +680,7 @@
     .botao-direito {
         right: 5%;
     }
-    
+
     .avaliacoes-txt p {
         font-size: 1.2rem;
         line-height: 2rem;
@@ -835,10 +826,7 @@
         width: 40%;
     }
 
-    /* seção aula */
-    .container-foto:first-of-type .informacoes-foto {
-        transform: translate(80%, -30%);
-    }
+
 
     /* seção vídeos */
     .videos-secundario a {
@@ -882,8 +870,6 @@
         margin-bottom: 10px;
     }
 
-
-
 }
 
 
@@ -908,13 +894,11 @@
 
     .avaliacoes {
         height: 50vh;
-
     }
 
     /* galeria */
     .container-galeria h2 {
         font-size: 4rem;
-
     }
 }
 
@@ -977,13 +961,9 @@
     }
 
     .informacoes-foto {
-        transform: translate(35%, -30%);
+        height: 120px;
+        width: 200px;
     }
-
-    .container-foto:first-of-type .informacoes-foto {
-        transform: translate(65%, -30%);
-    }
-
 
 
 }
@@ -1130,11 +1110,7 @@
     }
 
     .informacoes-foto {
-        transform: translate(20%, -30%);
-    }
-
-    .container-foto:first-of-type .informacoes-foto {
-        transform: translate(50%, -30%);
+        transform: translate(30%, -30%);
     }
 
     /* seção avaliações */

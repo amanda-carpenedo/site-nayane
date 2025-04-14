@@ -762,9 +762,9 @@ section .sobre-container a:hover {
 
 .informacoes-foto {
     position: absolute;
-    max-height: 120px;
-    max-width: 250px;
-    transform: translate(30%, -30%);
+    height: 120px;
+    width: 230px;
+    transform: translate(40%, -30%);
     padding: 15px;
     border-radius: 10px;
     font-family: "Raleway", sans-serif;
